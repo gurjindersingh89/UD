@@ -1,0 +1,77 @@
+body {
+  margin: 0;
+  font-family: 'Segoe UI', sans-serif;
+  background-color: #0f172a;
+  color: #f1f5f9;
+}
+
+/* Navbar */
+.navbar {
+  background: transparent;
+  transition: background 0.3s;
+}
+.navbar.scrolled {
+  background-color: #0f172a;
+}
+.navbar-brand img {
+  height: 50px;
+}
+.nav-link {
+  color: #f8fafc !important;
+}
+
+/* Hero Section */
+.hero {
+  height: 100vh;
+  background: linear-gradient(rgba(0,0,0,0.4), rgba(0,0,0,0.6)), url('https://images.unsplash.com/photo-1581090700227-1f1db9d79476?auto=format&fit=crop&w=1920&q=80') center/cover no-repeat;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  padding: 0 20px;
+}
+.hero h1 {
+  font-size: 3.5rem;
+  font-weight: 700;
+}
+.hero p {
+  font-size: 1.25rem;
+  margin-top: 20px;
+}
+.btn-primary {
+  background-color: #3b82f6;
+  border: none;
+  margin-top: 30px;
+}
+
+/* Services */
+.services {
+  padding: 80px 20px;
+}
+.service-box {
+  background-color: #1e293b;
+  padding: 40px 30px;
+  border-radius: 12px;
+  margin-bottom: 30px;
+}
+
+/* Why Choose Us */
+.why-choose-us {
+  padding: 80px 20px;
+}
+.feature-box {
+  background-color: #1e293b;
+  color: #f8fafc;
+  transition: transform 0.3s ease;
+}
+.feature-box:hover {
+  transform: translateY(-5px);
+}
+
+/* Responsive Typography */
+@media(max-width: 768px) {
+  .hero h1 {
+    font-size: 2.2rem;
+  }
+}
