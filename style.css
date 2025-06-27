@@ -117,4 +117,12 @@ body {
 .footer a:hover {
   text-decoration: underline;
 }
+  .about-section {
+  color: #f1f5f9;
+  line-height: 1.7;
+}
+.about-section p.lead {
+  font-size: 1.2rem;
+  font-weight: 500;
+}
 }
