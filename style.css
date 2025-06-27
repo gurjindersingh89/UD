@@ -256,4 +256,11 @@ body {
 .capability-box li {
   margin-bottom: 8px;
 }
+.udc-logo {
+  animation: glowPulse 3s ease-in-out infinite;
+}
+@keyframes glowPulse {
+  0%, 100% { filter: drop-shadow(0 0 2px #3b82f6); }
+  50% { filter: drop-shadow(0 0 8px #3b82f6); }
+}
 }
