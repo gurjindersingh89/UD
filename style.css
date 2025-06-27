@@ -264,7 +264,19 @@ body {
   50% { filter: drop-shadow(0 0 8px #3b82f6); }
 }
 .navbar-brand img {
-  height: 80px; /* default might be 40–50px */
+  height: 100px; /* default might be 40–50px */
   transition: transform 0.3s ease;
+}
+.udc-logo {
+  opacity: 0;
+  transform: translateY(-10px);
+  animation: logoReveal 1.2s ease forwards;
+}
+
+@keyframes logoReveal {
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
 }
 }
