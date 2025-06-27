@@ -24,6 +24,7 @@
           <li class="nav-item"><a class="nav-link" href="#services">Services</a></li>
           <li class="nav-item"><a class="nav-link" href="#why">Why UDCOMMS</a></li>
           <li class="nav-item"><a class="nav-link" href="#stats">Stats</a></li>
+          <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
         </ul>
       </div>
     </div>
@@ -51,6 +52,18 @@
         <h3>Chorus Infrastructure</h3>
         <p>Certified in ZOFDF, OFDF, AOFDF, MPO installs and co-location upgrades.</p>
       </div>
+      <div class="col-md-4 service-box" data-aos="zoom-in" data-aos-delay="400">
+        <h3>Network Upgrades & Audits</h3>
+        <p>We assess, upgrade, and future-proof your network with full audits and compliance checks.</p>
+      </div>
+      <div class="col-md-4 service-box" data-aos="zoom-in" data-aos-delay="500">
+        <h3>Fault Resolution</h3>
+        <p>End-to-end fault isolation and resolution—from diagnostics to restoration.</p>
+      </div>
+      <div class="col-md-4 service-box" data-aos="zoom-in" data-aos-delay="600">
+        <h3>Advanced Testing</h3>
+        <p>MPO cabling, OTDR, iOLM, Fluke testing, and end-face inspection for optimal performance.</p>
+      </div>
     </div>
   </section>
 
@@ -58,7 +71,7 @@
   <section id="why" class="why-choose-us container text-center py-5">
     <h2 class="mb-4" data-aos="fade-up">Why Choose UDCOMMS</h2>
     <p class="mb-5" data-aos="fade-up" data-aos-delay="100">
-      We’re not just another cabling company—we’re your infrastructure partner. Here’s what sets us apart.
+      With over 8 years of experience, we don’t just build networks—we maintain, upgrade, and protect them.
     </p>
     <div class="row">
       <div class="col-md-3 mb-4" data-aos="fade-up" data-aos-delay="200">
@@ -122,42 +135,21 @@
     </div>
   </section>
 
+  <!-- Contact Section -->
+  <section id="contact" class="contact container py-5 text-center" data-aos="fade-up">
+    <h2 class="mb-4">Contact Us</h2>
+    <p class="mb-3">Have a project in mind or need a network audit? Let’s talk.</p>
+    <p><strong>Email:</strong> <a href="mailto:Ben@udcomms.co.nz">Ben@udcomms.co.nz</a></p>
+    <p><strong>Phone:</strong> <a href="tel:+64242447500">+64 24 244 7500</a></p>
+  </section>
+
   <!-- Footer -->
   <footer class="footer text-center py-4">
     <div class="container">
       <p>&copy; 2025 UDCOMMS – Universal Data Communications Ltd. Auckland, NZ</p>
-      <p><a href="mailto:info@udcomms.co.nz">info@udcomms.co.nz</a> | <a href="tel:+6490000000">+64 9 000 0000</a></p>
     </div>
   </footer>
 
   <!-- Scripts -->
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
-  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
-  <script>
-    AOS.init();
-    window.addEventListener('scroll', () => {
-      const nav = document.querySelector('.navbar');
-      nav.classList.toggle('scrolled', window.scrollY > 50);
-    });
-
-    const counters = document.querySelectorAll('.counter');
-    const speed = 200;
-
-    counters.forEach(counter => {
-      const updateCount = () => {
-        const target = +counter.getAttribute('data-target');
-        const count = +counter.innerText;
-        const increment = target / speed;
-
-        if (count < target) {
-          counter.innerText = Math.ceil(count + increment);
-          setTimeout(updateCount, 20);
-        } else {
-          counter.innerText = target;
-        }
-      };
-      updateCount();
-    });
-  </script>
-</body>
-</html>
+  <script src="https://unpkg.com/aos@2.
