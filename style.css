@@ -263,4 +263,8 @@ body {
   0%, 100% { filter: drop-shadow(0 0 2px #3b82f6); }
   50% { filter: drop-shadow(0 0 8px #3b82f6); }
 }
+.navbar-brand img {
+  height: 80px; /* default might be 40–50px */
+  transition: transform 0.3s ease;
+}
 }
