@@ -226,4 +226,52 @@ body {
 .capability-box li {
   margin-bottom: 8px;
 }
+  .capabilities-header {
+  background-color: #0f172a;
+  color: #f8fafc;
+  height: 60vh;
+  padding: 80px 20px;
+  position: relative;
+  margin-top: 56px; /* Push below fixed navbar */
+}
+
+.capabilities-header h1 {
+  font-size: 3rem;
+  font-weight: 700;
+}
+
+.capabilities-header p {
+  font-size: 1.2rem;
+  font-weight: 400;
+  margin-top: 10px;
+}
+
+.capabilities-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 30px;
+  padding: 60px 20px 80px;
+}
+
+.capability-box {
+  background-color: #1e293b;
+  padding: 30px;
+  border-radius: 12px;
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+  transition: transform 0.3s ease;
+}
+
+.capability-box:hover {
+  transform: translateY(-5px);
+}
+
+.capability-box h3 {
+  color: #3b82f6;
+  margin-bottom: 15px;
+}
+
+.capability-box ul {
+  padding-left: 20px;
+  color: #e2e8f0;
+}
 }
