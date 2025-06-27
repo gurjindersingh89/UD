@@ -279,4 +279,31 @@ body {
     transform: translateY(0);
   }
 }
+.core-values {
+  background-color: #0f172a;
+  color: #f8fafc;
+}
+
+.value-box {
+  font-size: 1.3rem;
+  font-weight: 600;
+  border: 2px solid #3b82f6;
+  border-radius: 10px;
+  padding: 30px 15px;
+  background-color: #1e293b;
+  transition: transform 0.3s ease;
+}
+
+.value-box span {
+  display: block;
+  font-size: 2rem;
+  font-weight: 800;
+  color: #3b82f6;
+  margin-top: 8px;
+}
+
+.value-box:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 0 10px #3b82f6;
+}
 }
