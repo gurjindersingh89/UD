@@ -83,6 +83,21 @@ body {
   margin-bottom: 30px;
 }
 
+
+@keyframes colorPulse {
+  0% { color: #f8fafc; }
+  25% { color: #60a5fa; }  /* soft blue */
+  50% { color: #34d399; }  /* teal green */
+  75% { color: #facc15; }  /* amber */
+  100% { color: #f8fafc; }
+}
+
+.hero-content h1,
+.hero-content p {
+  animation: colorPulse 16s ease-in-out infinite;
+}
+
+
 /* Why Choose Us */
 .why-choose-us {
   padding: 80px 20px;
