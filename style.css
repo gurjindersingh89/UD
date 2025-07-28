@@ -20,6 +20,26 @@ body {
 .nav-link {
     color: #f8fafc !important;
 }
+/* Dropdown menu styling for services */
+.navbar .dropdown-menu {
+    background-color: #1e293b; /* Dark background for dropdown */
+    border: none;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+}
+.navbar .dropdown-item {
+    color: #f8fafc !important;
+    padding: 10px 20px;
+    transition: background-color 0.2s ease;
+}
+.navbar .dropdown-item:hover {
+    background-color: #3b82f6; /* Blue hover */
+    color: #fff !important;
+}
+.navbar .dropdown-divider {
+    border-top: 1px solid #334155;
+}
+
 
 /* Hero Slideshow (for index.html) */
 .hero-slideshow {
@@ -75,8 +95,8 @@ body {
 /* Gradient Text Animation for Hero Titles */
 .hero-content h1,
 .hero-content p,
-.hero-section-wifi-page h1, /* Applied to Wi-Fi page hero */
-.hero-section-wifi-page p.lead { /* Applied to Wi-Fi page hero lead */
+.hero-section-wifi-page h1, /* Applied to all dedicated page heroes */
+.hero-section-wifi-page p.lead { /* Applied to all dedicated page heroes lead */
     background: linear-gradient(270deg, #60a5fa, #34d399, #facc15, #60a5fa);
     background-size: 800% 800%;
     -webkit-background-clip: text;
@@ -91,9 +111,9 @@ body {
     100% { background-position: 0% 50%; }
 }
 
-/* Services */
+/* Services (Removed from index.html, but classes remain for dedicated pages if needed) */
 .services {
-    padding: 80px 20px;
+    padding: 80px 20px; /* This section will be removed from index.html */
 }
 .service-box {
     background-color: #1e293b;
@@ -326,8 +346,8 @@ body {
     box-shadow: 0 0 10px #3b82f6;
 }
 
-/* Styles specific to Wi-Fi Solutions Page (wifi-solutions.html) */
-.hero-section-wifi-page { /* A new class for the specific hero on the Wi-Fi page */
+/* Styles specific to Dedicated Service Pages (e.g., wifi-solutions.html, fibre-installations.html) */
+.hero-section-wifi-page { /* Used as a common hero class for all dedicated service pages */
     background: linear-gradient(to right, #0f172a, #1e293b); /* Darker gradient to match body/cta */
     color: #f8fafc;
     padding: 80px 0;
@@ -337,7 +357,7 @@ body {
     box-shadow: 0 4px 8px rgba(0,0,0,0.1);
 }
 
-/* Specific list styling for checkmarks on Wi-Fi page */
+/* Specific list styling for checkmarks on dedicated pages */
 .service-box ul.checkmark-list { /* New class for checkmark lists */
     list-style: none;
     padding-left: 0;
@@ -346,6 +366,7 @@ body {
     margin-bottom: 10px;
     padding-left: 25px;
     position: relative;
+    color: #e2e8f0; /* Consistent light text color */
 }
 .service-box ul.checkmark-list li::before {
     content: "✓"; /* Checkmark icon */
@@ -358,10 +379,10 @@ body {
     left: 0;
 }
 
-/* Ordered list styling for process section on Wi-Fi page */
+/* Ordered list styling for process sections on dedicated pages */
 .service-box ol {
     padding-left: 20px;
-    color: #e2e8f0;
+    color: #e2e8f0; /* Consistent light text color */
 }
 .service-box ol li {
     margin-bottom: 8px;
