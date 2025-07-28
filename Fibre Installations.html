@@ -18,23 +18,36 @@
 <body>
 
     <!-- Navbar -->
-    <nav class="navbar navbar-expand-lg fixed-top scrolled"> <!-- Added 'scrolled' class here -->
+       <nav class="navbar navbar-expand-lg fixed-top">
         <div class="container">
-            <a class="navbar-brand" href="index.html">
-                <img src="udc-logo.png" alt="UDC Logo" class="udc-logo" />
+            <a class="navbar-brand" href="#">
+            <img src="udc-logo.png" alt="UDC Logo" class="udc-logo" />
             </a>
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navMenuFibreInstall">
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navMenu">
                 <span class="navbar-toggler-icon"></span>
             </button>
-            <div class="collapse navbar-collapse" id="navMenuFibreInstall">
+            <div class="collapse navbar-collapse" id="navMenu">
                 <ul class="navbar-nav ms-auto">
-                    <li class="nav-item"><a class="nav-link" href="index.html#solutions">Our Solutions</a></li>
-                    <li class="nav-item"><a class="nav-link" href="wifi-solutions.html">Wi-Fi Solutions</a></li>
-                    <li class="nav-item"><a class="nav-link" href="data-cabling-pbx-solutions.html">Data & PBX Solutions</a></li>
-                    <li class="nav-item"><a class="nav-link" href="index.html#why">Why UDCOMMS</a></li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarServicesDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                            Services
+                        </a>
+                        <ul class="dropdown-menu" aria-labelledby="navbarServicesDropdown">
+                            <li><a class="dropdown-item" href="Fibre Installations.html">Fibre Installations</a></li>
+                            <li><a class="dropdown-item" href="Structured Cabling.html">Structured Cabling</a></li>
+                            <li><a class="dropdown-item" href="Network Upgrades & Audits.html">Network Upgrades & Audits</a></li>
+                            <li><a class="dropdown-item" href="Fault Resolution.html">Fault Resolution</a></li>
+                            <li><a class="dropdown-item" href="Advanced Testing.html">Advanced Testing</a></li>
+                            <li><a class="dropdown-item" href="Chorus Infrastructure.html">Chorus Infrastructure</a></li>
+                            <li><hr class="dropdown-divider"></li>
+                            <li><a class="dropdown-item" href="wifi-solutions.html">Wi-Fi Solutions</a></li>
+                            <li><a class="dropdown-item" href="data-cabling-pbx-solutions.html">Data & PBX Solutions</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item"><a class="nav-link" href="#why">Why UDCOMMS</a></li>
                     <li class="nav-item"><a class="nav-link" href="capabilities.html">Capabilities</a></li>
-                    <li class="nav-item"><a class="nav-link" href="index.html#stats">Stats</a></li>
-                    <li class="nav-item"><a class="nav-link" href="index.html#contact">Contact</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#stats">Stats</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
                 </ul>
             </div>
         </div>
