@@ -303,8 +303,10 @@ body {
     animation: logoReveal 1.2s ease forwards, glowPulse 3s ease-in-out infinite; /* Combined animations */
 }
 @keyframes glowPulse {
-    0%, 50% { filter: drop-shadow(0 0 2px #f1c232); }
-    50% { filter: drop-shadow(0 0 8px #f1c232); }
+    0%, 100% { filter: drop-shadow(0 0 2px #f1c232); }
+     0%, 100% { filter: drop-shadow(0 0 2px ##6dc707); }
+     0%, 100% { filter: drop-shadow(0 0 2px #2286ea); }
+    50% { filter: drop-shadow(0 0 8px #ffe599); }
 }
 @keyframes logoReveal {
     to {
