@@ -1,0 +1,216 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="udc-logo.png" type="image/x-icon" style="height: 200px; width: auto;">
+
+    <!-- SEO Meta Tags for Wi-Fi Solutions -->
+    <title>UDCOMMS | High-Speed Wi-Fi Design & Installation Services NZ</title>
+    <meta name="description" content="Expert high-speed Wi-Fi design, installation, and optimization services in New Zealand. UDCOMMS delivers robust, industrial-standard wireless network solutions for businesses and commercial spaces.">
+    <meta name="keywords" content="high-speed wifi design, wifi installation, commercial wifi, office wifi solutions, mesh wifi NZ, enterprise wireless, wifi optimization, industrial standards wifi, Auckland wifi, reliable wifi, secure wifi">
+    <meta name="author" content="Gurjinder Singh">
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet"/>
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet"/>
+    <style>
+        /* Custom styles, consistent with main site */
+        body {
+            font-family: 'Inter', sans-serif;
+            padding-top: 80px; /* To account for fixed navbar */
+            background-color: #f8f9fa;
+            color: #333;
+        }
+        .navbar {
+            background-color: #007bff;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+        }
+        .navbar-brand img {
+            height: 50px;
+        }
+        .navbar-nav .nav-link {
+            color: #fff !important;
+            font-weight: 500;
+            margin-left: 15px;
+        }
+        .navbar-nav .nav-link:hover {
+            color: #e2e6ea !important;
+        }
+        .hero-section-wifi { /* Specific hero for this page */
+            background: linear-gradient(to right, #007bff, #0056b3);
+            color: #fff;
+            padding: 80px 0;
+            text-align: center;
+            margin-bottom: 40px;
+            border-radius: 0 0 15px 15px;
+            box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+        }
+        .service-feature-wifi { /* Specific feature box for this page */
+            background-color: #fff;
+            padding: 40px;
+            border-radius: 10px;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.05);
+            margin-bottom: 30px;
+        }
+        .service-feature-wifi h2 {
+            color: #007bff;
+            margin-bottom: 25px;
+            font-weight: 600;
+        }
+        .service-feature-wifi ul {
+            list-style: none;
+            padding-left: 0;
+        }
+        .service-feature-wifi ul li {
+            margin-bottom: 10px;
+            padding-left: 25px;
+            position: relative;
+        }
+        .service-feature-wifi ul li::before {
+            content: "✓"; /* Checkmark icon */
+            color: #28a745; /* Green check */
+            font-weight: bold;
+            display: inline-block;
+            width: 1em;
+            margin-left: -1em;
+            position: absolute;
+            left: 0;
+        }
+        .cta-section-wifi { /* Specific CTA for this page */
+            background-color: #343a40;
+            color: #fff;
+            padding: 50px 0;
+            text-align: center;
+            border-radius: 10px;
+            margin-top: 40px;
+        }
+        .cta-section-wifi .btn-primary {
+            background-color: #28a745; /* Green for CTA */
+            border-color: #28a745;
+        }
+        .cta-section-wifi .btn-primary:hover {
+            background-color: #218838;
+            border-color: #1e7e34;
+        }
+        .footer {
+            background-color: #343a40;
+            color: #fff;
+            padding: 30px 0;
+            margin-top: 50px;
+            border-radius: 15px 15px 0 0;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg fixed-top">
+        <div class="container">
+            <a class="navbar-brand" href="index.html">
+                <img src="udc-logo.png" alt="UDC Logo" class="udc-logo" />
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navMenuWifi">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navMenuWifi">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item"><a class="nav-link" href="index.html#services">Services</a></li>
+                    <li class="nav-item"><a class="nav-link" href="index.html#solutions">Other Solutions</a></li> <!-- Link back to other solutions on index -->
+                    <li class="nav-item"><a class="nav-link" href="index.html#why">Why UDCOMMS</a></li>
+                    <li class="nav-item"><a class="nav-link" href="capabilities.html">Capabilities</a></li>
+                    <li class="nav-item"><a class="nav-link" href="index.html#stats">Stats</a></li>
+                    <li class="nav-item"><a class="nav-link" href="index.html#contact">Contact</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section for Wi-Fi Solutions Page -->
+    <section class="hero-section-wifi" data-aos="fade-up">
+        <div class="container">
+            <h1>High-Speed Wi-Fi Design & Installation for Your Business</h1>
+            <p class="lead">Unlock seamless, reliable wireless connectivity built to top industrial standards in New Zealand.</p>
+        </div>
+    </section>
+
+    <!-- Main Content - Wi-Fi Service Feature -->
+    <main class="container py-4">
+        <div class="row">
+            <div class="col-lg-10 mx-auto">
+
+                <section class="service-feature-wifi" data-aos="fade-up" data-aos-delay="100">
+                    <h2>Comprehensive Wi-Fi Solutions by UDCOMMS</h2>
+                    <p>In today's fast-paced business environment, robust and reliable wireless connectivity is non-negotiable. UDCOMMS specializes in designing, deploying, and optimizing high-speed Wi-Fi networks that meet the demanding needs of modern enterprises, from small offices to large commercial complexes and hospitality venues.</p>
+                    <p>Our Wi-Fi solutions adhere to **top industrial standards**, ensuring:</p>
+                    <ul>
+                        <li>Seamless, dead-zone-free coverage across your premises.</li>
+                        <li>High-capacity bandwidth for numerous devices and demanding applications.</li>
+                        <li>Advanced security protocols to protect your network and sensitive data.</li>
+                        <li>Scalable infrastructure ready for future technologies like Wi-Fi 6/6E.</li>
+                        <li>Expert Access Point (AP) placement for optimal signal strength and performance.</li>
+                        <li>Comprehensive support for mesh networks and enterprise-grade wireless deployments.</li>
+                        <li>Reduced interference and improved signal stability in crowded environments.</li>
+                        <li>Proactive monitoring and maintenance for consistent performance.</li>
+                    </ul>
+                    <p>Whether you need a brand-new Wi-Fi system designed from the ground up, an upgrade to your existing infrastructure, or troubleshooting for persistent connectivity issues, UDCOMMS provides tailored solutions for unparalleled wireless performance and business continuity.</p>
+                </section>
+
+                <!-- Benefits of High-Speed Wi-Fi -->
+                <section class="service-feature-wifi" data-aos="fade-up" data-aos-delay="200">
+                    <h2>Why Invest in Professional Wi-Fi Solutions?</h2>
+                    <p>A high-quality Wi-Fi network is more than just internet access; it's a critical component of your business's productivity, efficiency, and customer satisfaction. Benefits include:</p>
+                    <ul>
+                        <li><strong>Enhanced Productivity:</strong> Fast, reliable Wi-Fi allows employees to work efficiently from anywhere in the office.</li>
+                        <li><strong>Improved Collaboration:</strong> Seamless connectivity supports video conferencing, cloud applications, and real-time data sharing.</li>
+                        <li><strong>Scalability for Growth:</strong> A professionally designed network can easily accommodate more users and devices as your business expands.</li>
+                        <li><strong>Data Security:</strong> Robust security features protect your sensitive business information from unauthorized access.</li>
+                        <li><strong>Customer Satisfaction:</strong> For retail or hospitality, offering excellent guest Wi-Fi enhances the customer experience.</li>
+                        <li><strong>Future-Proofing:</strong> Investing in modern standards ensures your network is ready for evolving technology demands.</li>
+                    </ul>
+                </section>
+
+                <!-- Our Process (Optional, but good for SEO and user trust) -->
+                <section class="service-feature-wifi" data-aos="fade-up" data-aos-delay="300">
+                    <h2>Our Wi-Fi Solution Process</h2>
+                    <p>UDCOMMS follows a meticulous process to deliver optimal Wi-Fi performance:</p>
+                    <ol>
+                        <li><strong>Site Survey & Assessment:</strong> We conduct a thorough analysis of your premises to identify coverage gaps, interference sources, and unique requirements.</li>
+                        <li><strong>Custom Design:</strong> Based on the assessment, we design a bespoke Wi-Fi network layout, selecting appropriate hardware (APs, controllers) and configurations.</li>
+                        <li><strong>Professional Installation:</strong> Our certified technicians ensure precise installation and optimal placement of all equipment, minimizing disruption to your operations.</li>
+                        <li><strong>Testing & Optimization:</strong> We perform comprehensive testing (signal strength, speed, coverage) and fine-tune settings for peak performance.</li>
+                        <li><strong>Ongoing Support & Maintenance:</strong> We offer continued support, monitoring, and maintenance to ensure your Wi-Fi network remains reliable and secure.</li>
+                    </ol>
+                </section>
+
+                <!-- Call to Action -->
+                <section class="cta-section-wifi" data-aos="zoom-in" data-aos-delay="400">
+                    <div class="container">
+                        <h2>Ready for Superior Wi-Fi Connectivity?</h2>
+                        <p class="lead">Contact UDCOMMS today for a consultation on high-speed Wi-Fi design and installation tailored to your business needs.</p>
+                        <a href="index.html#contact" class="btn btn-primary btn-lg">Get a Free Wi-Fi Consultation</a>
+                    </div>
+                </section>
+
+            </div>
+        </div>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer text-center py-4">
+        <div class="container">
+            <p>&copy; 2025 UDCOMMS – Universal Data Communications Ltd. Auckland, NZ</p>
+        </div>
+    </footer>
+
+    <!-- Scripts -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init({
+            duration: 800,
+            once: true,
+            offset: 50,
+        });
+    </script>
+</body>
+</html>
