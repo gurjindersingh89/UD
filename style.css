@@ -312,8 +312,8 @@ body {
     }
 }
 .navbar-brand img {
-    height: 120px; /* default might be 40–50px */
-    transition: transform 0.3s ease;
+    height: 200px; /* default might be 40–50px */
+    transition: transform 0.9s ease;
 }
 
 
