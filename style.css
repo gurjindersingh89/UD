@@ -97,7 +97,7 @@ body {
 .hero-content p,
 .hero-section-wifi-page h1, /* Applied to all dedicated page heroes */
 .hero-section-wifi-page p.lead { /* Applied to all dedicated page heroes lead */
-    background: linear-gradient(270deg, #60a5fa, #34d399, #facc15, #60a5fa);
+    background: linear-gradient(270deg, #ebf034, #18f0a1, #cca300, #0356bc,#7280d0,#83848a,#eb7b7b,#eb7b7b,#e7d963);
     background-size: 800% 800%;
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
