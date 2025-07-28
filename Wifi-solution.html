@@ -13,93 +13,7 @@
 
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet"/>
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet"/>
-    <style>
-        /* Custom styles, consistent with main site */
-        body {
-            font-family: 'Inter', sans-serif;
-            padding-top: 80px; /* To account for fixed navbar */
-            background-color: #f8f9fa;
-            color: #333;
-        }
-        .navbar {
-            background-color: #007bff;
-            box-shadow: 0 2px 4px rgba(0,0,0,0.1);
-        }
-        .navbar-brand img {
-            height: 50px;
-        }
-        .navbar-nav .nav-link {
-            color: #fff !important;
-            font-weight: 500;
-            margin-left: 15px;
-        }
-        .navbar-nav .nav-link:hover {
-            color: #e2e6ea !important;
-        }
-        .hero-section-wifi { /* Specific hero for this page */
-            background: linear-gradient(to right, #007bff, #0056b3);
-            color: #fff;
-            padding: 80px 0;
-            text-align: center;
-            margin-bottom: 40px;
-            border-radius: 0 0 15px 15px;
-            box-shadow: 0 4px 8px rgba(0,0,0,0.1);
-        }
-        .service-feature-wifi { /* Specific feature box for this page */
-            background-color: #fff;
-            padding: 40px;
-            border-radius: 10px;
-            box-shadow: 0 2px 5px rgba(0,0,0,0.05);
-            margin-bottom: 30px;
-        }
-        .service-feature-wifi h2 {
-            color: #007bff;
-            margin-bottom: 25px;
-            font-weight: 600;
-        }
-        .service-feature-wifi ul {
-            list-style: none;
-            padding-left: 0;
-        }
-        .service-feature-wifi ul li {
-            margin-bottom: 10px;
-            padding-left: 25px;
-            position: relative;
-        }
-        .service-feature-wifi ul li::before {
-            content: "✓"; /* Checkmark icon */
-            color: #28a745; /* Green check */
-            font-weight: bold;
-            display: inline-block;
-            width: 1em;
-            margin-left: -1em;
-            position: absolute;
-            left: 0;
-        }
-        .cta-section-wifi { /* Specific CTA for this page */
-            background-color: #343a40;
-            color: #fff;
-            padding: 50px 0;
-            text-align: center;
-            border-radius: 10px;
-            margin-top: 40px;
-        }
-        .cta-section-wifi .btn-primary {
-            background-color: #28a745; /* Green for CTA */
-            border-color: #28a745;
-        }
-        .cta-section-wifi .btn-primary:hover {
-            background-color: #218838;
-            border-color: #1e7e34;
-        }
-        .footer {
-            background-color: #343a40;
-            color: #fff;
-            padding: 30px 0;
-            margin-top: 50px;
-            border-radius: 15px 15px 0 0;
-        }
-    </style>
+    <link rel="stylesheet" href="style.css" /> <!-- Link to the external stylesheet -->
 </head>
 <body>
 
@@ -126,7 +40,7 @@
     </nav>
 
     <!-- Hero Section for Wi-Fi Solutions Page -->
-    <section class="hero-section-wifi" data-aos="fade-up">
+    <section class="hero-section-wifi-page" data-aos="fade-up">
         <div class="container">
             <h1>High-Speed Wi-Fi Design & Installation for Your Business</h1>
             <p class="lead">Unlock seamless, reliable wireless connectivity built to top industrial standards in New Zealand.</p>
@@ -138,11 +52,11 @@
         <div class="row">
             <div class="col-lg-10 mx-auto">
 
-                <section class="service-feature-wifi" data-aos="fade-up" data-aos-delay="100">
+                <section class="service-box" data-aos="fade-up" data-aos-delay="100">
                     <h2>Comprehensive Wi-Fi Solutions by UDCOMMS</h2>
                     <p>In today's fast-paced business environment, robust and reliable wireless connectivity is non-negotiable. UDCOMMS specializes in designing, deploying, and optimizing high-speed Wi-Fi networks that meet the demanding needs of modern enterprises, from small offices to large commercial complexes and hospitality venues.</p>
                     <p>Our Wi-Fi solutions adhere to **top industrial standards**, ensuring:</p>
-                    <ul>
+                    <ul class="checkmark-list"> <!-- Added checkmark-list class -->
                         <li>Seamless, dead-zone-free coverage across your premises.</li>
                         <li>High-capacity bandwidth for numerous devices and demanding applications.</li>
                         <li>Advanced security protocols to protect your network and sensitive data.</li>
@@ -156,10 +70,10 @@
                 </section>
 
                 <!-- Benefits of High-Speed Wi-Fi -->
-                <section class="service-feature-wifi" data-aos="fade-up" data-aos-delay="200">
+                <section class="service-box" data-aos="fade-up" data-aos-delay="200">
                     <h2>Why Invest in Professional Wi-Fi Solutions?</h2>
                     <p>A high-quality Wi-Fi network is more than just internet access; it's a critical component of your business's productivity, efficiency, and customer satisfaction. Benefits include:</p>
-                    <ul>
+                    <ul class="checkmark-list"> <!-- Added checkmark-list class -->
                         <li><strong>Enhanced Productivity:</strong> Fast, reliable Wi-Fi allows employees to work efficiently from anywhere in the office.</li>
                         <li><strong>Improved Collaboration:</strong> Seamless connectivity supports video conferencing, cloud applications, and real-time data sharing.</li>
                         <li><strong>Scalability for Growth:</strong> A professionally designed network can easily accommodate more users and devices as your business expands.</li>
@@ -169,8 +83,8 @@
                     </ul>
                 </section>
 
-                <!-- Our Process (Optional, but good for SEO and user trust) -->
-                <section class="service-feature-wifi" data-aos="fade-up" data-aos-delay="300">
+                <!-- Our Process -->
+                <section class="service-box" data-aos="fade-up" data-aos-delay="300">
                     <h2>Our Wi-Fi Solution Process</h2>
                     <p>UDCOMMS follows a meticulous process to deliver optimal Wi-Fi performance:</p>
                     <ol>
@@ -183,7 +97,7 @@
                 </section>
 
                 <!-- Call to Action -->
-                <section class="cta-section-wifi" data-aos="zoom-in" data-aos-delay="400">
+                <section class="cta-banner text-center py-5" data-aos="zoom-in" data-aos-delay="400">
                     <div class="container">
                         <h2>Ready for Superior Wi-Fi Connectivity?</h2>
                         <p class="lead">Contact UDCOMMS today for a consultation on high-speed Wi-Fi design and installation tailored to your business needs.</p>
