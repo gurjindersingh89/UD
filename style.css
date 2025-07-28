@@ -296,6 +296,7 @@ body {
 
 /* Logo Animation */
 .udc-logo {
+    height: 300px;
     animation: glowPulse 3s ease-in-out infinite;
     opacity: 0; /* Initial state for reveal animation */
     transform: translateY(-10px); /* Initial state for reveal animation */
