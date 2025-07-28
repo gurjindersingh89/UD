@@ -312,7 +312,7 @@ body {
     }
 }
 .navbar-brand img {
-    height: 200px; /* default might be 40–50px */
+    height: 300px; /* default might be 40–50px */
     transition: transform 0.9s ease;
 }
 
