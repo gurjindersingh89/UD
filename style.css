@@ -387,3 +387,37 @@ body {
 .service-box ol li {
     margin-bottom: 8px;
 }
+/* Navbar */
+.navbar {
+    background: transparent;
+    transition: background 0.3s; /* This ensures a smooth transition */
+}
+.navbar.scrolled {
+    background-color: #0f172a; /* This is the background color when scrolled down */
+}
+/* Ensure other navbar styles are also present and consistent */
+.navbar-brand img {
+    height: 50px; /* Or whatever height your logo should be */
+}
+.nav-link {
+    color: #f8fafc !important; /* Text color for nav links */
+}
+/* Add or confirm these dropdown styles if you haven't already */
+.navbar .dropdown-menu {
+    background-color: #1e293b; /* Dark background for dropdown */
+    border: none;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+}
+.navbar .dropdown-item {
+    color: #f8fafc !important;
+    padding: 10px 20px;
+    transition: background-color 0.2s ease;
+}
+.navbar .dropdown-item:hover {
+    background-color: #3b82f6; /* Blue hover */
+    color: #fff !important;
+}
+.navbar .dropdown-divider {
+    border-top: 1px solid #334155;
+}
