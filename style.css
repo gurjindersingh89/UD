@@ -300,7 +300,7 @@ body {
     animation: glowPulse 3s ease-in-out infinite;
     opacity: 0; /* Initial state for reveal animation */
     transform: translateY(-50px); /* Initial state for reveal animation */
-    animation: logoReveal 1.2s ease forwards, glowPulse 5s ease-in-out infinite; /* Combined animations */
+    animation: logoReveal 1.2s ease forwards, glowPulse 20s ease-in-out infinite; /* Combined animations */
 }
 @keyframes glowPulse {
  /*   0%, 100% { filter: drop-shadow(0 0 2px #f1c232); }
@@ -312,11 +312,13 @@ body {
 
      0% { filter: drop-shadow(0 0 2px #f1c232); }   /* Subtle yellow at start */
             10% { filter: drop-shadow(0 0 2px #f1c232); }  /* Hold subtle yellow */
+            100% { filter: drop-shadow(0 0 0px #f1c232); } /* Hold no glow for the remainder of the loop */
             20% { filter: drop-shadow(0 0 4px #6dc707); }  /* Slightly brighter green */
+           100% { filter: drop-shadow(0 0 0px #f1c232); } /* Hold no glow for the remainder of the loop */
             35% { filter: drop-shadow(0 0 6px #2286ea); }  /* Medium bright blue */
             40% { filter: drop-shadow(0 0 8px #ffe599); }  /* Brightest light yellow/orange */
+           100% { filter: drop-shadow(0 0 0px #f1c232); } /* Hold no glow for the remainder of the loop */
             78% { filter: drop-shadow(0 0 2px #f1c232); } /* Fade back to subtle yellow */
-            80% { filter: drop-shadow(0 0 0px #f1c232); } /* No glow (0px blur) */
             100% { filter: drop-shadow(0 0 0px #f1c232); } /* Hold no glow for the remainder of the loop */
         }
 @keyframes logoReveal {
