@@ -297,10 +297,10 @@ body {
 /* Logo Animation */
 .udc-logo {
   
-    animation: glowPulse 3s ease-in-out infinite;
+    animation: glowPulse 10s ease-in-out infinite;
     opacity: 0; /* Initial state for reveal animation */
-    transform: translateY(-10px); /* Initial state for reveal animation */
-    animation: logoReveal 1.2s ease forwards, glowPulse 3s ease-in-out infinite; /* Combined animations */
+    transform: translateY(-50px); /* Initial state for reveal animation */
+    animation: logoReveal 1.2s ease forwards, glowPulse 10s ease-in-out infinite; /* Combined animations */
 }
 @keyframes glowPulse {
     0%, 100% { filter: drop-shadow(0 0 2px #f1c232); }
@@ -316,7 +316,7 @@ body {
 }
 .navbar-brand img {
     height: 120px; /* default might be 40–50px */
-    transition: transform 0.9s ease;
+    transition: transform 3s ease;
 }
 
 
