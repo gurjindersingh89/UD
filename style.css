@@ -316,6 +316,7 @@ body {
     35% { filter: drop-shadow(0 0 6px #2286ea); }  /* Medium bright blue */
     40% { filter: drop-shadow(0 0 8px #ffe599); }  /* Brightest light yellow/orange */
     100% { filter: drop-shadow(0 0 2px #f1c232); } /* Back to subtle yellow at end */
+     80% { filter: drop-shadow(0 0 0px #f1c232); } /* No glow (0px blur) */
 }
 @keyframes logoReveal {
     to {
