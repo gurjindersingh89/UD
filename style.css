@@ -70,7 +70,7 @@
             height: 100vh;
             overflow: hidden;
             /* Add padding-top to account for fixed navbar */
-            padding-top: 120px; /* Adjust based on your navbar's height */
+            padding-top: 152px; /* Adjusted to account for navbar height (120px img + 2*16px padding) */
             box-sizing: border-box; /* Include padding in height calculation */
         }
         .slideshow {
@@ -320,7 +320,6 @@
 
         /* Logo Animation */
         .udc-logo {
-            /* Removed redundant animation declaration */
             opacity: 0; /* Initial state for reveal animation */
             transform: translateY(-50px); /* Initial state for reveal animation */
             animation: logoReveal 1.2s ease forwards, glowPulse 10s ease-in-out infinite; /* Combined animations */
@@ -417,39 +416,85 @@
         .service-box ol li {
             margin-bottom: 8px;
         }
-        /* Navbar */
-        .navbar {
-            background: transparent;
-            transition: background 0.3s; /* This ensures a smooth transition */
+        /* Styles for the mobile toggler button container */
+        .navbar-toggler {
+            background-color: transparent; /* Makes the button background transparent */
+            border: 1px solid rgba(255, 255, 255, 0.5); /* A light, semi-transparent border */
+            border-radius: 0.25rem; /* Slightly rounded corners for the button */
+            padding: 0.5rem 0.75rem; /* Padding inside the button */
+            cursor: pointer; /* Indicates it's clickable */
+            display: flex; /* Use flexbox to arrange the spans vertically */
+            flex-direction: column; /* Stack spans vertically */
+            justify-content: space-around; /* Distribute space evenly between lines */
+            width: 30px; /* Overall width of the hamburger icon area */
+            height: 24px; /* Overall height of the hamburger icon area */
+            position: relative; /* Useful if you need to position other elements relative to it */
+            z-index: 10; /* Ensures it's on top of other content if overlapping */
+
+            /* This rule hides the toggler button by default on larger screens (desktop) */
+            /* It will only show up when the screen width is less than 768px,
+               as defined in the media query below. */
         }
-        .navbar.scrolled {
-            background-color: #0f172a; /* This is the background color when scrolled down */
+
+        /* Default color and appearance for the individual hamburger lines (spans) */
+        .navbar-toggler-icon {
+            display: block; /* Ensures each span takes its own line */
+            width: 100%; /* Each line takes the full width of the toggler button */
+            height: 2px; /* Thickness of each line */
+            background-color: white; /* *** This is the color of your hamburger lines *** */
+            border-radius: 1px; /* Slightly rounded ends for the lines */
+            transition: all 0.3s ease-in-out; /* Smooth transition for color changes on hover/focus */
         }
-        /* Ensure other navbar styles are also present and consistent */
-        .navbar-brand img {
-            height: 120px; /* Or whatever height your logo should be */
+
+        /* Adds space between the hamburger lines */
+        .navbar-toggler-icon + .navbar-toggler-icon {
+            margin-top: 4px; /* 4px space between each line */
         }
-        .nav-link {
-            color: #f8fafc !important; /* Text color for nav links */
+
+        /* Optional: Change color of the lines when the toggler button is hovered or focused */
+        .navbar-toggler:hover .navbar-toggler-icon,
+        .navbar-toggler:focus .navbar-toggler-icon {
+            background-color: #e0e0e0; /* Lighter gray on hover/focus */
         }
-        /* Add or confirm these dropdown styles if you haven't already */
-        .navbar .dropdown-menu {
-            background-color: #1e293b; /* Dark background for dropdown */
-            border: none;
-            border-radius: 8px;
+
+        /* Hide menu items by default on small screens */
+        .nav-menu {
+            display: none; /* Hidden by default on mobile */
+            flex-direction: column;
+            width: 100%;
+            background-color: #1e293b; /* Solid background for the menu */
+            position: fixed; /* Changed to fixed */
+            top: 152px; /* Adjusted to be below the navbar */
+            left: 0;
+            height: calc(100vh - 152px); /* Take remaining viewport height */
+            overflow-y: auto; /* Enable scrolling if content overflows */
+            padding: 1rem 0;
             box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+            z-index: 999; /* Ensure it's above most content */
         }
-        .navbar .dropdown-item {
-            color: #f8fafc !important;
-            padding: 10px 20px;
-            transition: background-color 0.2s ease;
+
+        .nav-menu.active {
+            display: flex; /* Shows the menu when the 'active' class is present */
         }
-        .navbar .dropdown-item:hover {
-            background-color: #3b82f6; /* Blue hover */
-            color: #fff !important;
-        }
-        .navbar .dropdown-divider {
-            border-top: 1px solid #334155;
+
+        /* Media query to hide the toggler on desktop and show the full menu */
+        @media (min-width: 768px) {
+            .navbar-toggler {
+                display: none; /* Hide toggler button on screens 768px and wider */
+            }
+            .nav-menu {
+                display: flex;
+                flex-direction: row;
+                position: static;
+                width: auto;
+                background-color: transparent;
+                box-shadow: none;
+                height: auto; /* Reset height for desktop */
+                overflow-y: visible; /* Reset overflow for desktop */
+            }
+            .nav-menu a {
+                padding: 0.5rem 1rem;
+            }
         }
     </style>
 </head>
