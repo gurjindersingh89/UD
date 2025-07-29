@@ -300,13 +300,13 @@ body {
     animation: glowPulse 3s ease-in-out infinite;
     opacity: 0; /* Initial state for reveal animation */
     transform: translateY(-50px); /* Initial state for reveal animation */
-    animation: logoReveal 1.2s ease forwards, glowPulse 10s ease-in-out infinite; /* Combined animations */
+    animation: logoReveal 1.2s ease forwards, glowPulse 5s ease-in-out infinite; /* Combined animations */
 }
 @keyframes glowPulse {
     0%, 100% { filter: drop-shadow(0 0 2px #f1c232); }
-     40% { filter: drop-shadow(0 0 4px #6dc707); }
+     70% { filter: drop-shadow(0 0 4px #6dc707); }
      55% { filter: drop-shadow(0 0 6px #2286ea); }
-    70% { filter: drop-shadow(0 0 8px #ffe599); }
+    40% { filter: drop-shadow(0 0 8px #ffe599); }
 }
 @keyframes logoReveal {
     to {
