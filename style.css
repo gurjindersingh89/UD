@@ -304,9 +304,9 @@ body {
 }
 @keyframes glowPulse {
     0%, 100% { filter: drop-shadow(0 0 2px #f1c232); }
-     0%, 100% { filter: drop-shadow(0 0 2px ##6dc707); }
-     45% { filter: drop-shadow(0 0 8px #2286ea); }
-    55% { filter: drop-shadow(0 0 8px #ffe599); }
+     40% { filter: drop-shadow(0 0 2px ##6dc707); }
+     55%% { filter: drop-shadow(0 0 8px #2286ea); }
+    70% { filter: drop-shadow(0 0 8px #ffe599); }
 }
 @keyframes logoReveal {
     to {
